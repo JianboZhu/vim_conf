@@ -1,0 +1,5 @@
+This is my vim conf file.
+
+# Installation
+  The installation is very simple, just one command:
+    cp -f .vimrc ~/
