@@ -1,5 +1,12 @@
 This is my vim conf file.
 
 # Installation
-  The installation is very simple, just one command:
-    cp -f .vimrc ~/
+  The installation is very simple:
+    1. Build .vimrc file in your home directory by executing the following command:
+       cp -f .vimrc ~/
+    2. Install 'vundle', the vim plugins manager.
+       git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    3. Open any one of your files, and execute ":BundleInstall" in the vim command model.
+
+# Usage of 'plug-in's
+  Please see the wiki of this project.

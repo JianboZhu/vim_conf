@@ -91,14 +91,6 @@ Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'breestealth/Mark-Karkat'
 
-" conf for tabs, 为标签页进行的配置，通过ctrl h/l切换标签等
-" tabs_conf {
-let mapleader = ','
-nnoremap <C-l> gt
-nnoremap <C-h> gT
-nnoremap <leader>t : tabe<CR>
-" } // end tabs_conf
-
 " 超过80行时，就用下划线标示出来
 au BufRead,BufNewFile *.h,*.c,*.cpp,*.py 2match Underlined /.\%81v/
 
