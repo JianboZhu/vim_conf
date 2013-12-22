@@ -54,9 +54,9 @@ let g:Powline_symbols='fancy'
 Bundle 'taglist.vim'
 let Tlist_Show_One_File = 1                                "  只显示当前文件的taglist，默认是显示多个
 let Tlist_Exit_OnlyWindow = 1                              "  如果taglist是最后一个窗口，则退出vim
-"let Tlist_Auto_Open = 1                                    "  启动VIM后自动打开taglist窗口
+let Tlist_Auto_Open = 1                                    "  启动VIM后自动打开taglist窗口
 let Tlist_Use_Right_Window = 1                             "  在右侧窗口中显示taglist
-let Tlist_GainFocus_On_ToggleOpen = 1                      "  打开taglist时，光标保留在taglist窗口
+let Tlist_GainFocus_On_ToggleOpen = 0                      "  打开taglist时，光标保留在代码窗口
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Ctags_Cmd='/usr/bin/ctags '                      "  设置ctags命令的位置
 " 设置关闭和打开taglist窗口的快捷键
@@ -87,9 +87,28 @@ Bundle 'cSyntaxAfter'
 " search and replace across mutiple files.
 Bundle "EasyGrep"
 
+" Manage windows of vim.
+"Bundle 'winmanager'
+"" let g:winManagerWindowLayout='FileExplorer|BufExplorer'
+"let g:winManagerWindowLayout='FileExplorer|BufExplorer|TagList'
+"let g:persistentBehaviour=0
+"let g:winManagerWidth=20
+"let g:defaultExplorer=1
+""nmap <silent> <leader>fir :FirstExplorerWindow<cr>
+""nmap <silent> <leader>bot :BottomExplorerWindow<cr>
+"nmap <silent> <leader>wm :WMToggle<cr>
+
 Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'breestealth/Mark-Karkat'
+
+" conf for tabs, 为标签页进行的配置，通过ctrl h/l切换标签等
+" tabs_conf {
+"let mapleader = ','
+"nnoremap <C-l> gt
+"nnoremap <C-h> gT
+"nnoremap <leader>t : tabe<CR>
+" } // end tabs_conf
 
 " 超过80行时，就用下划线标示出来
 au BufRead,BufNewFile *.h,*.c,*.cpp,*.py 2match Underlined /.\%81v/
