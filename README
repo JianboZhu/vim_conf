@@ -1,12 +1,26 @@
-This is my vim conf file.
+This is my vim conf files.
+.vimrc and _vimrc is for Linux and Windows, respectively.
 
-# Installation
+#### Installation
+# 1) For Linux/Unix
   The installation is very simple:
-    1. Build .vimrc file in your home directory by executing the following command:
+    1. copy .vimrc file in your home directory by executing the following command:
        cp -f .vimrc ~/
-    2. Install 'vundle', the vim plugins manager.
+    2. Install 'vundle', the vim plugins manager. (Note, you should install git in your computer before doing this.)
        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     3. Open any one of your files, and execute ":BundleInstall" in the vim command model.
 
 # Usage of 'plug-in's
   Please see the wiki of this project.
+
+# 2) For Windows
+  The installation is also quite simple: (You can also get some helps from this website: https://github.com/gmarik/Vundle.vim/wiki/Vundle-for-Windows)
+    1. copy _vimrc in this depo into your gvim installing path, such as "C:\Program Files (x86)\Vim"
+       cp _vimrc C:\Program Files (x86)\Vim
+    2. install 'vundle', the vim plugins manager. (Note, you should install git in your computer before doing this.)
+        git clone https://github.com/gmarik/vundle.git C:/Users/USERNAME/bundle/vundle
+       Note: pls replace the "USERNAME" with your own user name, such as Joe.
+    3. Launch gvim, and execute ":BundleInstall" in the vim command model.
+
+
+Okay, that's pretty much it.
